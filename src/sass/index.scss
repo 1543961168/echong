@@ -1,0 +1,1673 @@
+        .headerTop {
+            height: 28px;
+            border-bottom: 1px solid #ddd;
+            background: #f5f5f5;
+            position: relative;
+            z-index: 1002;
+        }
+        
+        // 头部上方
+        .headerTop .headerTop1 {
+            color: #717171;
+            width: 1214px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // 顶条左边
+            .headerTop1-l {
+                font-size: 12px;
+                width: 255px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .glyphicon {
+                    color: #68af5c !important;
+                    margin-left: 3px;
+                }
+                .shou {
+                    width: 13px;
+                    height: 13px;
+                    background-image: url(../img/lvshou.png);
+                    margin-left: 5px;
+                }
+            }
+            // 顶条右部
+            .headerTop1-r {
+                font-size: 12px;
+                width: 450px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                span {
+                    cursor: pointer;
+                }
+                span:hover {
+                    color: rgb(86, 122, 241);
+                }
+                .my {
+                    position: relative;
+                    ul {
+                        position: absolute;
+                        top: 26px;
+                        display: none;
+                        color: #717171;
+                    }
+                }
+                // .my:hover ul {
+                //     display: block;
+                // }
+                .wenti {
+                    color: red;
+                }
+            }
+        }
+        
+        // 头部中部
+        .headerMidlle {
+            width: 1214px;
+            height: 122px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            //搜索框
+            .search {
+                width: 488px;
+                height: 64px;
+                .search1 {
+                    width: 488px;
+                    height: 36px;
+                    .search1-l {
+                        width: 413px;
+                        height: 36px;
+                        border: 2px solid #459D36;
+                        float: left;
+                    }
+                    button {
+                        width: 72px;
+                        height: 36px;
+                        border: none;
+                        background-color: #459D36;
+                        float: left;
+                        color: rgb(255, 255, 255);
+                        font-weight: 900;
+                    }
+                }
+                .search2 {
+                    margin-top: 5px;
+                    font-size: 14px;
+                    color: #717171;
+                    span {
+                        cursor: pointer;
+                    }
+                    span:nth-child(2) {
+                        color: red;
+                    }
+                    span:not(:first-child) {
+                        margin-left: 2px;
+                        margin-right: 2px;
+                    }
+                    span:not(:first-child):hover {
+                        color: #000;
+                    }
+                }
+            }
+            //购物车
+            .car {
+                width: 130px;
+                height: 64px;
+                .car1 {
+                    width: 130px;
+                    height: 41px;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    background: #F5F5F5;
+                    border-radius: 15px;
+                    box-shadow: 0 0 2px 2px rgb(230, 230, 230);
+                    cursor: pointer;
+                    div {
+                        width: 41px;
+                        height: 41px;
+                        float: left;
+                        border-radius: 15px;
+                        background: #459d36;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        span {
+                            color: #fff;
+                            font-size: 20px;
+                        }
+                    }
+                    .gou {
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+        
+        // 头部下方
+        .header-d {
+            width: 1214px;
+            height: 36px;
+            margin: 0 auto;
+        }
+        
+        .header-Dl {
+            float: left;
+            width: 232px;
+            height: 36px;
+            span {
+                float: left;
+                width: 115px;
+                height: 36px;
+                border: 1px solid #ccc;
+                display: inline-block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                p {
+                    margin: 0;
+                }
+            }
+            .qieactive{
+                background: #E95A49;
+                color: #fff;
+            }
+
+        }
+        
+        .header-Df {
+            float: left;
+            width: 950px;
+            overflow: hidden;
+            li {
+                float: left;
+                width: 120px;
+                height: 36px;
+                padding: 0 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                font-weight: 900;
+                b {
+                    display: inline-block;
+                    width: 13px;
+                    height: 17px;
+                    background: url(../img/gutou.png);
+                    vertical-align: middle;
+                    margin-top: -2px;
+                    margin-right: 6px;
+                }
+                a {
+                    color: #000;
+                    text-decoration: none
+                }
+                a:hover {
+                    color: #459D36;
+                }
+                a:hover b {
+                    transform: rotate(360deg);
+                    transition: .2s;
+                }
+            }
+        }
+        
+        //轮播部分
+        .lunbo {
+            width: 100%;
+            height: 366px;
+            background: #eb614e;
+            .lunbo1 {
+                width: 1214px;
+                height: 366px;
+                margin: 0 auto;
+            }
+        }
+        
+        nav {
+            position: relative;
+            .ul-l {
+                float: left;
+                width: 230px;
+                height: 366px;
+                background: #fff;
+                li {
+                    width: 230px;
+                    height: 52px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    color: #585858;
+                    border: 1px dashed #f1f1f1;
+                    span:nth-child(1) {
+                        margin-left: 17px;
+                    }
+                    span:nth-child(2) {
+                        margin-left: 78px;
+                    }
+                    span:nth-child(3) {
+                        margin-left: 55px;
+                    }
+                    .glyphicon {
+                        font-size: 8px;
+                        color: #b4b4b4;
+                    }
+                }
+                li:nth-child(7) {
+                    color: #459D36;
+                    border: none;
+                    span:nth-child(2) {
+                        margin-left: 5px;
+                    }
+                }
+            }
+            div {
+                float: left;
+                display: none;
+                background: #fff;
+                left: 230px;
+                width: 690px;
+                height: 366px;
+                position: absolute;
+                z-index: 2;
+                padding: 10px;
+                box-shadow: 1px 1px 4px 1px #949494;
+                border-top: 1px solid #68af5c;
+                border-right: 1px solid #68af5c;
+                border-bottom: 1px solid #68af5c;
+                p {
+                    width: 680px;
+                    height: 40px;
+                    border-bottom: 1px dashed #e7e7e7;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 35px;
+                        height: 35px;
+                        margin-left: 20px;
+                    }
+                    span {
+                        cursor: pointer;
+                    }
+                    a {
+                        margin-left: 20px;
+                        font-size: 12px;
+                        font-weight: 900;
+                        color: #68af5c;
+                        text-decoration: none;
+                    }
+                }
+                p:nth-child(1) {
+                    a {
+                        margin-left: 15px;
+                        font-size: 18px;
+                        color: #000;
+                        text-decoration: none;
+                    }
+                    span:hover a {
+                        color: rgb(53, 94, 231);
+                    }
+                }
+            }
+        }
+        
+        .lb-box {
+            width: 780px;
+            height: 366px;
+            float: left;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        // 轮播中心
+        @media (max-width:568px) {
+            .lb-box {
+                width: 76%;
+                height: 220px;
+            }
+        }
+        
+        .lb-content {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .lb-item {
+            width: 100%;
+            height: 100%;
+            display: none;
+            position: relative;
+        }
+        
+        .lb-item>a {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        
+        .lb-item>a>img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .lb-item>a>span {
+            width: 100%;
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            padding: 15px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        @media (max-width:568px) {
+            .lb-item>a>span {
+                padding: 10px;
+            }
+        }
+        
+        .lb-item.active {
+            display: block;
+            left: 0%;
+        }
+        
+        .lb-item.active.left {
+            left: -100%;
+        }
+        
+        .lb-item.active.right {
+            left: 100%;
+        }
+        /*  */
+        
+        .lb-item.next,
+        .lb-item.prev {
+            display: block;
+            position: absolute;
+            top: 0px;
+        }
+        
+        .lb-item.next {
+            left: 100%;
+        }
+        
+        .lb-item.prev {
+            left: -100%;
+        }
+        
+        .lb-item.next.left,
+        .lb-item.prev.right {
+            left: 0%;
+        }
+        
+        .lb-sign {
+            position: absolute;
+            right: 325px;
+            top: 313px;
+            padding: 5px 3px;
+            border-radius: 6px;
+            list-style: none;
+            user-select: none;
+            // background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .lb-sign li {
+            width: 22px;
+            height: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            text-align: center;
+            float: left;
+            color: #fff;
+            background-color: #999999;
+            margin: auto 4px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .lb-sign li:hover {
+            color: #fff;
+        }
+        
+        .lb-sign li.active {
+            color: #000;
+            background-color: #EBEBEB;
+        }
+        
+        .lb-ctrl {
+            transition: all 0.1s linear;
+        }
+        
+        @media (max-width:568px) {
+            .lb-ctrl {
+                font-size: 30px;
+            }
+        }
+        
+        .lb-ctrl.left {
+            left: -50px;
+        }
+        
+        .lb-ctrl.right {
+            right: -50px;
+        }
+        
+        .lb-box:hover .lb-ctrl.left {
+            left: 10px;
+        }
+        
+        .lb-box:hover .lb-ctrl.right {
+            right: 10px;
+        }
+        
+        .lb-ctrl:hover {
+            background-color: #000;
+        }
+        
+        // 轮播右部
+        .ul-f {
+            width: 203px;
+            height: 366px;
+            float: left;
+            background: #fff;
+            overflow: hidden;
+            li {
+                width: 203px;
+                height: 122px;
+                border-bottom: 1px solid #f1f1f1;
+                cursor: pointer;
+                position: relative;
+                img {
+                    position: absolute;
+                    right: 0;
+                    transition: all .4s ease-out;
+                }
+                &:hover img {
+                    right: 10px;
+                }
+            }
+        }
+        
+        //狗狗主粮区
+        .zhuliang {
+            width: 1214px;
+            height: 589px;
+            margin: 34px auto 0;
+            overflow: hidden;
+            //主粮区左边
+            .zhuliang1 {
+                width: 330px;
+                height: 513px;
+                float: left;
+                .zhuliang1-t {
+                    width: 332px;
+                    height: 36px;
+                    background: #fff;
+                    display: flex;
+                    align-items: center;
+                    span {
+                        font-size: 24px;
+                        color: rgb(49, 49, 49);
+                        margin-left: 10px;
+                    }
+                }
+                .zhuliang1-m {
+                    width: 330px;
+                    height: 484px;
+                    position: relative;
+                    .zhuliang1-b {
+                        position: absolute;
+                        width: 330px;
+                        height: 181px;
+                        background: rgb(231, 231, 231);
+                        opacity: .8;
+                        left: 0;
+                        top: 296px;
+                        .zhuliang1-b1 {
+                            width: 330px;
+                            height: 44px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 12px;
+                        }
+                        .zhuliang1-b2 {
+                            width: 330px;
+                            height: 128px;
+                            a {
+                                color: rgb(61, 61, 61);
+                                text-decoration: none;
+                            }
+                            span {
+                                width: 90px;
+                                height: 26px;
+                                border-radius: 15px;
+                                background: #fff;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+                                opacity: 1;
+                            }
+                            span:hover {
+                                color: rgb(91, 107, 253);
+                            }
+                            .zhuliang1-b20 {
+                                width: 332px;
+                                height: 42.6px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                            }
+                        }
+                    }
+                }
+            }
+            //主粮右边
+            .bgbox {
+                width: 882px;
+                height: 513px;
+                float: left;
+                .tab-top {
+                    width: 882px;
+                    height: 36px;
+                    background: #fff;
+                    li {
+                        float: right;
+                        height: 36px;
+                        border: 1px solid #f1f1f1;
+                        padding: 0 20px;
+                        line-height: 36px;
+                        cursor: pointer;
+                    }
+                    .active {
+                        border: 2px 1px 2px, solid;
+                        border-color: #459D36 #459D36 #fff;
+                    }
+                }
+                .tabbox .boxlist {
+                    display: none;
+                    width: 882px;
+                    height: 477px;
+                    border: 1px solid;
+                    border-color: #459D36 #e7e7e7 #e7e7e7 #fff;
+                    // background: pink;
+                    div {
+                        cursor: pointer;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: rgb(105, 105, 105);
+                    }
+                    //热门专区
+                    .dong {
+                        position: relative;
+                        overflow: hidden;
+                    }
+                    img {
+                        position: absolute;
+                        right: 0px;
+                        transition: .5s;
+                        z-index: -1;
+                    }
+                    .dong:hover img {
+                        right: 10px;
+                    }
+                    .li4-1 {
+                        width: 386px;
+                        height: 314px;
+                        float: left;
+                        // background: #fff;
+                        border-right: 1px solid #e7e7e7;
+                        img {
+                            width: 386px;
+                            height: 299px;
+                        }
+                        span {
+                            position: absolute;
+                            left: 30px;
+                        }
+                        span:nth-child(1) {
+                            top: 30px;
+                        }
+                        span:nth-child(2) {
+                            top: 60px;
+                            color: red;
+                        }
+                    }
+                    .li4-2 {
+                        width: 494px;
+                        height: 314px;
+                        float: left;
+                        div {
+                            width: 494px;
+                            height: 157px;
+                            position: relative;
+                            span {
+                                position: absolute;
+                                left: 50px;
+                            }
+                            span:nth-child(1) {
+                                top: 30px;
+                            }
+                            span:nth-child(2) {
+                                top: 60px;
+                                color: red;
+                            }
+                        }
+                        div:nth-child(1) {
+                            border-bottom: 1px solid #e7e7e7;
+                        }
+                    }
+                    .li4-3 {
+                        width: 292px;
+                        height: 161px;
+                        float: left;
+                        position: relative;
+                        background: #F9F9F9;
+                        border-top: 1px solid #e7e7e7;
+                        img {
+                            width: 294px;
+                            height: 161px;
+                            z-index: 2;
+                        }
+                        span {
+                            position: absolute;
+                            left: 30px;
+                            z-index: 3;
+                        }
+                        span:nth-child(1) {
+                            top: 20px;
+                        }
+                        span:nth-child(2) {
+                            top: 50px;
+                            color: red;
+                        }
+                    }
+                    .dong2 {
+                        border-left: 1px solid #e7e7e7;
+                    }
+                }
+                .li3 {
+                    //进口狗粮
+                    .li3-1 {
+                        width: 882px;
+                        height: 238.5px;
+                        border-bottom: 1px solid #e7e7e7;
+                        li {
+                            float: left;
+                            width: 220.5px;
+                            height: 238.5px;
+                            padding: 10px;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            overflow: hidden;
+                            cursor: pointer;
+                        }
+                        img {
+                            position: absolute;
+                            top: 15px;
+                            left: 36px;
+                            width: 150px;
+                            height: 150px;
+                            transition: .4s;
+                        }
+                        li:hover img {
+                            top: 7px;
+                        }
+                        li:not(:nth-child(1)):not(:nth-child(5)) {
+                            border-left: 1px solid #e7e7e7;
+                        }
+                        span {
+                            font-size: 12px;
+                            color: rgb(105, 105, 105);
+                            position: absolute;
+                            top: 162px;
+                        }
+                        span:nth-child(3) {
+                            color: #dd2727;
+                            font-size: 16px;
+                            top: 208px
+                        }
+                        span:nth-child(2):hover {
+                            color: rgb(73, 98, 240);
+                        }
+                    }
+                }
+            }
+            //主粮区下边
+            .zhuliang-b {
+                float: left;
+                width: 1212px;
+                height: 70px;
+                border-left: 1px solid #e7e7e7;
+                border-bottom: 1px solid #e7e7e7;
+                border-right: 1px solid #e7e7e7;
+                div {
+                    width: 151px;
+                    height: 70px;
+                    float: left;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                div:hover img {
+                    opacity: .6;
+                }
+                img {
+                    width: 100px;
+                    height: 48px;
+                    opacity: 1;
+                    transition: .3s;
+                }
+                div:not(:nth-child(1)) {
+                    border-left: 1px solid #e7e7e7;
+                }
+            }
+        }
+        
+        // 狗狗零食
+        .bgbox1 {
+            width: 882px;
+            height: 513px;
+            float: left;
+            .tab-top {
+                width: 882px;
+                height: 36px;
+                background: #fff;
+                li {
+                    float: right;
+                    height: 36px;
+                    border: 1px solid #f1f1f1;
+                    padding: 0 20px;
+                    line-height: 36px;
+                    cursor: pointer;
+                }
+                .active {
+                    border: 2px 1px 2px, solid;
+                    border-color: #459D36 #459D36 #fff;
+                }
+            }
+            .tabbox1 .boxlist1 {
+                display: none;
+                width: 882px;
+                height: 477px;
+                border: 1px solid;
+                border-color: #459D36 #e7e7e7 #e7e7e7 #fff;
+                // background: pink;
+                div {
+                    cursor: pointer;
+                }
+                a {
+                    text-decoration: none;
+                    color: rgb(105, 105, 105);
+                }
+                //热门专区
+                .dong {
+                    position: relative;
+                    overflow: hidden;
+                }
+                img {
+                    position: absolute;
+                    right: 0px;
+                    transition: .5s;
+                    z-index: -1;
+                }
+                .dong:hover img {
+                    right: 10px;
+                }
+                .li4-1 {
+                    width: 386px;
+                    height: 314px;
+                    float: left;
+                    // background: #fff;
+                    border-right: 1px solid #e7e7e7;
+                    img {
+                        width: 386px;
+                        height: 299px;
+                    }
+                    span {
+                        position: absolute;
+                        left: 30px;
+                    }
+                    span:nth-child(1) {
+                        top: 30px;
+                    }
+                    span:nth-child(2) {
+                        top: 60px;
+                        color: red;
+                    }
+                }
+                .li4-2 {
+                    width: 494px;
+                    height: 314px;
+                    float: left;
+                    div {
+                        width: 494px;
+                        height: 157px;
+                        position: relative;
+                        span {
+                            position: absolute;
+                            left: 50px;
+                        }
+                        span:nth-child(1) {
+                            top: 30px;
+                        }
+                        span:nth-child(2) {
+                            top: 60px;
+                            color: red;
+                        }
+                    }
+                    div:nth-child(1) {
+                        border-bottom: 1px solid #e7e7e7;
+                    }
+                }
+                .li4-3 {
+                    width: 292px;
+                    height: 161px;
+                    float: left;
+                    position: relative;
+                    background: #F9F9F9;
+                    border-top: 1px solid #e7e7e7;
+                    img {
+                        width: 294px;
+                        height: 161px;
+                        z-index: 2;
+                    }
+                    span {
+                        position: absolute;
+                        left: 30px;
+                        z-index: 3;
+                    }
+                    span:nth-child(1) {
+                        top: 20px;
+                    }
+                    span:nth-child(2) {
+                        top: 50px;
+                        color: red;
+                    }
+                }
+                .dong2 {
+                    border-left: 1px solid #e7e7e7;
+                }
+            }
+            .li3 {
+                //进口狗粮
+                .li3-1 {
+                    width: 882px;
+                    height: 238.5px;
+                    border-bottom: 1px solid #e7e7e7;
+                    li {
+                        float: left;
+                        width: 220.5px;
+                        height: 238.5px;
+                        padding: 10px;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        overflow: hidden;
+                        cursor: pointer;
+                    }
+                    img {
+                        position: absolute;
+                        top: 15px;
+                        left: 36px;
+                        width: 150px;
+                        height: 150px;
+                        transition: .4s;
+                    }
+                    li:hover img {
+                        top: 7px;
+                    }
+                    li:not(:nth-child(1)):not(:nth-child(5)) {
+                        border-left: 1px solid #e7e7e7;
+                    }
+                    span {
+                        font-size: 12px;
+                        color: rgb(105, 105, 105);
+                        position: absolute;
+                        top: 162px;
+                    }
+                    span:nth-child(3) {
+                        color: #dd2727;
+                        font-size: 16px;
+                        top: 208px
+                    }
+                    span:nth-child(2):hover {
+                        color: rgb(73, 98, 240);
+                    }
+                }
+            }
+        }
+        
+        //狗狗医疗保健区
+        .bgbox2 {
+            width: 882px;
+            height: 513px;
+            float: left;
+            .tab-top {
+                width: 882px;
+                height: 36px;
+                background: #fff;
+                li {
+                    float: right;
+                    height: 36px;
+                    border: 1px solid #f1f1f1;
+                    padding: 0 20px;
+                    line-height: 36px;
+                    cursor: pointer;
+                }
+                .active {
+                    border: 2px 1px 2px, solid;
+                    border-color: #459D36 #459D36 #fff;
+                }
+            }
+            .tabbox2 .boxlist2 {
+                display: none;
+                width: 882px;
+                height: 477px;
+                border: 1px solid;
+                border-color: #459D36 #e7e7e7 #e7e7e7 #fff;
+                // background: pink;
+                div {
+                    cursor: pointer;
+                }
+                a {
+                    text-decoration: none;
+                    color: rgb(105, 105, 105);
+                }
+                //热门专区
+                .dong {
+                    position: relative;
+                    overflow: hidden;
+                }
+                img {
+                    position: absolute;
+                    right: 0px;
+                    transition: .5s;
+                    z-index: -1;
+                }
+                .dong:hover img {
+                    right: 10px;
+                }
+                .li4-1 {
+                    width: 386px;
+                    height: 314px;
+                    float: left;
+                    // background: #fff;
+                    border-right: 1px solid #e7e7e7;
+                    img {
+                        width: 386px;
+                        height: 299px;
+                    }
+                    span {
+                        position: absolute;
+                        left: 30px;
+                    }
+                    span:nth-child(1) {
+                        top: 30px;
+                    }
+                    span:nth-child(2) {
+                        top: 60px;
+                        color: red;
+                    }
+                }
+                .li4-2 {
+                    width: 494px;
+                    height: 314px;
+                    float: left;
+                    div {
+                        width: 494px;
+                        height: 157px;
+                        position: relative;
+                        span {
+                            position: absolute;
+                            left: 50px;
+                        }
+                        span:nth-child(1) {
+                            top: 30px;
+                        }
+                        span:nth-child(2) {
+                            top: 60px;
+                            color: red;
+                        }
+                    }
+                    div:nth-child(1) {
+                        border-bottom: 1px solid #e7e7e7;
+                    }
+                }
+                .li4-3 {
+                    width: 292px;
+                    height: 161px;
+                    float: left;
+                    position: relative;
+                    background: #F9F9F9;
+                    border-top: 1px solid #e7e7e7;
+                    img {
+                        width: 294px;
+                        height: 161px;
+                        z-index: 2;
+                    }
+                    span {
+                        position: absolute;
+                        left: 30px;
+                        z-index: 3;
+                    }
+                    span:nth-child(1) {
+                        top: 20px;
+                    }
+                    span:nth-child(2) {
+                        top: 50px;
+                        color: red;
+                    }
+                }
+                .dong2 {
+                    border-left: 1px solid #e7e7e7;
+                }
+            }
+            .li3 {
+                //进口狗粮
+                .li3-1 {
+                    width: 882px;
+                    height: 238.5px;
+                    border-bottom: 1px solid #e7e7e7;
+                    li {
+                        float: left;
+                        width: 220.5px;
+                        height: 238.5px;
+                        padding: 10px;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        overflow: hidden;
+                        cursor: pointer;
+                    }
+                    img {
+                        position: absolute;
+                        top: 15px;
+                        left: 36px;
+                        width: 150px;
+                        height: 150px;
+                        transition: .4s;
+                    }
+                    li:hover img {
+                        top: 7px;
+                    }
+                    li:not(:nth-child(1)):not(:nth-child(5)) {
+                        border-left: 1px solid #e7e7e7;
+                    }
+                    span {
+                        font-size: 12px;
+                        color: rgb(105, 105, 105);
+                        position: absolute;
+                        top: 162px;
+                    }
+                    span:nth-child(3) {
+                        color: #dd2727;
+                        font-size: 16px;
+                        top: 208px
+                    }
+                    span:nth-child(2):hover {
+                        color: rgb(73, 98, 240);
+                    }
+                }
+            }
+        }
+        
+        //狗狗日用区
+        .bgbox3 {
+            width: 882px;
+            height: 513px;
+            float: left;
+            .tab-top {
+                width: 882px;
+                height: 36px;
+                background: #fff;
+                li {
+                    float: right;
+                    height: 36px;
+                    border: 1px solid #f1f1f1;
+                    padding: 0 20px;
+                    line-height: 36px;
+                    cursor: pointer;
+                }
+                .active {
+                    border: 2px 1px 2px, solid;
+                    border-color: #459D36 #459D36 #fff;
+                }
+            }
+            .tabbox3 .boxlist3 {
+                display: none;
+                width: 882px;
+                height: 477px;
+                border: 1px solid;
+                border-color: #459D36 #e7e7e7 #e7e7e7 #fff;
+                // background: pink;
+                div {
+                    cursor: pointer;
+                }
+                a {
+                    text-decoration: none;
+                    color: rgb(105, 105, 105);
+                }
+                //热门专区
+                .dong {
+                    position: relative;
+                    overflow: hidden;
+                }
+                img {
+                    position: absolute;
+                    right: 0px;
+                    transition: .5s;
+                    z-index: -1;
+                }
+                .dong:hover img {
+                    right: 10px;
+                }
+                .li4-1 {
+                    width: 386px;
+                    height: 314px;
+                    float: left;
+                    // background: #fff;
+                    border-right: 1px solid #e7e7e7;
+                    img {
+                        width: 386px;
+                        height: 299px;
+                    }
+                    span {
+                        position: absolute;
+                        left: 30px;
+                    }
+                    span:nth-child(1) {
+                        top: 30px;
+                    }
+                    span:nth-child(2) {
+                        top: 60px;
+                        color: red;
+                    }
+                }
+                .li4-2 {
+                    width: 494px;
+                    height: 314px;
+                    float: left;
+                    div {
+                        width: 494px;
+                        height: 157px;
+                        position: relative;
+                        span {
+                            position: absolute;
+                            left: 50px;
+                        }
+                        span:nth-child(1) {
+                            top: 30px;
+                        }
+                        span:nth-child(2) {
+                            top: 60px;
+                            color: red;
+                        }
+                    }
+                    div:nth-child(1) {
+                        border-bottom: 1px solid #e7e7e7;
+                    }
+                }
+                .li4-3 {
+                    width: 292px;
+                    height: 161px;
+                    float: left;
+                    position: relative;
+                    background: #F9F9F9;
+                    border-top: 1px solid #e7e7e7;
+                    img {
+                        width: 294px;
+                        height: 161px;
+                        z-index: 2;
+                    }
+                    span {
+                        position: absolute;
+                        left: 30px;
+                        z-index: 3;
+                    }
+                    span:nth-child(1) {
+                        top: 20px;
+                    }
+                    span:nth-child(2) {
+                        top: 50px;
+                        color: red;
+                    }
+                }
+                .dong2 {
+                    border-left: 1px solid #e7e7e7;
+                }
+            }
+            .li3 {
+                //进口狗粮
+                .li3-1 {
+                    width: 882px;
+                    height: 238.5px;
+                    border-bottom: 1px solid #e7e7e7;
+                    li {
+                        float: left;
+                        width: 220.5px;
+                        height: 238.5px;
+                        padding: 10px;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        overflow: hidden;
+                        cursor: pointer;
+                    }
+                    img {
+                        position: absolute;
+                        top: 15px;
+                        left: 36px;
+                        width: 150px;
+                        height: 150px;
+                        transition: .4s;
+                    }
+                    li:hover img {
+                        top: 7px;
+                    }
+                    li:not(:nth-child(1)):not(:nth-child(5)) {
+                        border-left: 1px solid #e7e7e7;
+                    }
+                    span {
+                        font-size: 12px;
+                        color: rgb(105, 105, 105);
+                        position: absolute;
+                        top: 162px;
+                    }
+                    span:nth-child(3) {
+                        color: #dd2727;
+                        font-size: 16px;
+                        top: 208px
+                    }
+                    span:nth-child(2):hover {
+                        color: rgb(73, 98, 240);
+                    }
+                }
+            }
+        }
+        
+        //狗狗牵引&服饰&玩具区
+        .bgbox4 {
+            width: 882px;
+            height: 513px;
+            float: left;
+            .tab-top {
+                width: 882px;
+                height: 36px;
+                background: #fff;
+                li {
+                    float: right;
+                    height: 36px;
+                    border: 1px solid #f1f1f1;
+                    padding: 0 20px;
+                    line-height: 36px;
+                    cursor: pointer;
+                }
+                .active {
+                    border: 2px 1px 2px, solid;
+                    border-color: #459D36 #459D36 #fff;
+                }
+            }
+            .tabbox4 .boxlist4 {
+                display: none;
+                width: 882px;
+                height: 477px;
+                border: 1px solid;
+                border-color: #459D36 #e7e7e7 #e7e7e7 #fff;
+                // background: pink;
+                div {
+                    cursor: pointer;
+                }
+                a {
+                    text-decoration: none;
+                    color: rgb(105, 105, 105);
+                }
+                //热门专区
+                .dong {
+                    position: relative;
+                    overflow: hidden;
+                }
+                img {
+                    position: absolute;
+                    right: 0px;
+                    transition: .5s;
+                    z-index: -1;
+                }
+                .dong:hover img {
+                    right: 10px;
+                }
+                .li4-1 {
+                    width: 386px;
+                    height: 314px;
+                    float: left;
+                    // background: #fff;
+                    border-right: 1px solid #e7e7e7;
+                    img {
+                        width: 386px;
+                        height: 299px;
+                    }
+                    span {
+                        position: absolute;
+                        left: 30px;
+                    }
+                    span:nth-child(1) {
+                        top: 30px;
+                    }
+                    span:nth-child(2) {
+                        top: 60px;
+                        color: red;
+                    }
+                }
+                .li4-2 {
+                    width: 494px;
+                    height: 314px;
+                    float: left;
+                    div {
+                        width: 494px;
+                        height: 157px;
+                        position: relative;
+                        span {
+                            position: absolute;
+                            left: 50px;
+                        }
+                        span:nth-child(1) {
+                            top: 30px;
+                        }
+                        span:nth-child(2) {
+                            top: 60px;
+                            color: red;
+                        }
+                    }
+                    div:nth-child(1) {
+                        border-bottom: 1px solid #e7e7e7;
+                    }
+                }
+                .li4-3 {
+                    width: 292px;
+                    height: 161px;
+                    float: left;
+                    position: relative;
+                    background: #F9F9F9;
+                    border-top: 1px solid #e7e7e7;
+                    img {
+                        width: 294px;
+                        height: 161px;
+                        z-index: 2;
+                    }
+                    span {
+                        position: absolute;
+                        left: 30px;
+                        z-index: 3;
+                    }
+                    span:nth-child(1) {
+                        top: 20px;
+                    }
+                    span:nth-child(2) {
+                        top: 50px;
+                        color: red;
+                    }
+                }
+                .dong2 {
+                    border-left: 1px solid #e7e7e7;
+                }
+            }
+            .li3 {
+                //进口狗粮
+                .li3-1 {
+                    width: 882px;
+                    height: 238.5px;
+                    border-bottom: 1px solid #e7e7e7;
+                    li {
+                        float: left;
+                        width: 220.5px;
+                        height: 238.5px;
+                        padding: 10px;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        overflow: hidden;
+                        cursor: pointer;
+                    }
+                    img {
+                        position: absolute;
+                        top: 15px;
+                        left: 36px;
+                        width: 150px;
+                        height: 150px;
+                        transition: .4s;
+                    }
+                    li:hover img {
+                        top: 7px;
+                    }
+                    li:not(:nth-child(1)):not(:nth-child(5)) {
+                        border-left: 1px solid #e7e7e7;
+                    }
+                    span {
+                        font-size: 12px;
+                        color: rgb(105, 105, 105);
+                        position: absolute;
+                        top: 162px;
+                    }
+                    span:nth-child(3) {
+                        color: #dd2727;
+                        font-size: 16px;
+                        top: 208px
+                    }
+                    span:nth-child(2):hover {
+                        color: rgb(73, 98, 240);
+                    }
+                }
+            }
+        }
+        
+        //尾部
+        footer {
+            width: 100%;
+            margin-top: 32px;
+            background-color: #f5f5f5;
+            .footer1 {
+                margin: 0 auto;
+                width: 1214px;
+                height: 460px;
+                //尾部上方
+                .footer1-t {
+                    width: 1214px;
+                    height: 102px;
+                    border-bottom: 1px solid #e7e7e7;
+                    li {
+                        float: left;
+                        width: 202px;
+                        height: 102px;
+                        display: flex;
+                        align-items: center;
+                        font-size: 18px;
+                        font-weight: 900;
+                        position: relative;
+                        overflow: hidden;
+                        img {
+                            width: 62px;
+                            height: 62px;
+                        }
+                        a {
+                            position: relative;
+                            width: 202px;
+                            height: 90px;
+                            display: block;
+                            color: rgb(48, 48, 48);
+                            text-decoration: none;
+                            transition: .6s;
+                            top: 12px;
+                        }
+                    }
+                    li:hover a {
+                        color: #9c3131;
+                        top: 6px;
+                    }
+                }
+                //尾部中部
+                .footer1-m {
+                    width: 1214px;
+                    height: 188px;
+                    border-bottom: 1px solid #e7e7e7;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    div {
+                        height: 133px;
+                        color: #666;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                    div:not(:nth-child(1)) {
+                        h2 {
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+                        p {
+                            font-size: 14px;
+                            font-weight: 500;
+                            margin-top: 5px;
+                        }
+                        a {
+                            color: #666;
+                        }
+                        p:nth-child(1) {
+                            margin-top: 20px;
+                        }
+                        p:hover a {
+                            color: #a73222;
+                        }
+                    }
+                    div:nth-child(1) {
+                        div {
+                            float: left;
+                            margin-left: 30px;
+                        }
+                        img {
+                            float: left;
+                        }
+                        h2 {
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+                        p {
+                            font-size: 18px;
+                            font-weight: 700;
+                            span {
+                                font-size: 14px;
+                                font-weight: 500;
+                            }
+                        }
+                        p:nth-child(4) {
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
+                    div:nth-child(5) {
+                        // display: flex;
+                        // justify-content: center;
+                        p {
+                            font-size: 12px;
+                            text-align: center;
+                            margin-top: 0;
+                            color: #000;
+                        }
+                        p:nth-child(1) {
+                            margin-top: 0;
+                        }
+                        img {
+                            margin-top: 5px;
+                        }
+                    }
+                    div:nth-child(5) {
+                        p {
+                            font-size: 12px;
+                            text-align: center;
+                            margin-top: 0;
+                            color: #000;
+                        }
+                        p:nth-child(1) {
+                            margin-top: 0;
+                        }
+                        img {
+                            margin-top: 5px;
+                        }
+                    }
+                    div:nth-child(6) {
+                        p {
+                            font-size: 12px;
+                            text-align: center;
+                            margin-top: 0;
+                            color: #000;
+                        }
+                        p:nth-child(1) {
+                            margin-top: 0;
+                        }
+                        img {
+                            margin-top: 5px;
+                        }
+                    }
+                }
+                //尾部下方
+                .footer1-b {
+                    width: 1214px;
+                    div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding-top: 20px;
+                    }
+                    div:nth-child(1) {
+                        width: 1214px;
+                        span {
+                            margin-left: 10px;
+                            font-size: 12px;
+                            a {
+                                color: #999;
+                            }
+                            img {
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                        span:hover a {
+                            color: rgb(231, 53, 53);
+                        }
+                    }
+                    div:nth-child(2) {
+                        a {
+                            margin-right: 3px;
+                        }
+                        img {
+                            width: 82px;
+                            height: 28px;
+                        }
+                    }
+                    div:nth-child(3) {
+                        font-size: 12px;
+                        span {
+                            margin-left: 10px;
+                        }
+                        a {
+                            color: #000;
+                        }
+                        span:not(:nth-child(5)):hover a {
+                            color: #ee2a2af3;
+                        }
+                    }
+                }
+            }
+        }
