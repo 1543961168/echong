@@ -1,22 +1,16 @@
 !function($){
-  console.log(2)
-  //获取本地id
-  function benid(){
-    //根据本地存储，显示用户信息
-    if (localStorage.getItem('username')) {
-      // console.log('username')
-      $('.login').hide();
-      $('.admin').show();
-      $('.admin span').html(localStorage.getItem('username'));
-    }
+  // console.log(2)
+  //导入头部组建
+  $(document).ready(function(){
+    $("header").load("header.html")
+    console.log(1)
+  })
+  //导入尾部组建
+  $(document).ready(function(){
+    $("footer").load("footer.html")
+    console.log(1)
+  })
 
-    $('.admin a').on('click', function () {
-        $('.login').show();
-        $('.admin').hide();
-        localStorage.removeItem('username');
-    });
-  }
-  benid()
   function erji(){
     $("#erji").find("li").mouseover(function() {
       var index = $(this).index();

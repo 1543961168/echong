@@ -3,181 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="echong" content="width=device-width, initial-scale=1.0">
     <title>【E宠商城】官网，精选全球宠物用品，品质养宠，尽在E宠</title>
     <meta name="keywords" content="宠物商城,宠物狗,宠物店,宠物用品,宠物网,E宠商城">
     <meta name="description" content="
     E宠商城是专业的宠物用品购物平台，专业买手精选全球30000余款好货，超过1000种知名宠物用品品牌，10年累计数百万宠友好评，E宠始终不忘初心，旨为亿万宠友带去更高品质的专业养宠服务。">
     <link rel="shortcut icon" type="image/x-icon" href="http://static.epetbar.com/favicon.ico?v=2">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_1856282_4z41v3ag0jc.css">
-    <link rel="stylesheet" href="./src/css/public.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1856282_1hv7ct8ru4l.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="script/jquery-1.9.1.min.js"></script>
 
-    <link rel="stylesheet" href="./src/css/css.css">
-    <link rel="stylesheet" href="./src/scss/index.min.css">
-    <script src="./src/js/jquery-1.9.1.min.js"></script>
-    <!-- <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script> -->
 </head>
 
 <body>
-    <!-- -------------  头部顶条---------------- -->
-    <div class="headerTop">
-        <div class="headerTop1">
-            <!-- 顶条左边 -->
-            <div class="headerTop1-l">
-                <!-- e宠首页 -->
-                <span>
-                    <span class="glyphicon glyphicon-home"></span>
-                <a href="#"><span>E宠首页</span></a>
-                </span>
-                <span style="margin-left: 10px;">送至：</span>
-                <!-- ------地址联动-- -->
-                <div class="dd">
-                    <div id="store-selector">
-                        <div class="text">
-                            <div></div><b></b>
-                        </div>
-                        <div onclick="$('#store-selector').removeClass('hover')" class="close"></div>
-                    </div>
-                    <!--store-selector end-->
-                    <div id="store-prompt"><strong></strong></div>
-                    <!--store-prompt end--->
-
-
-                </div>
-                <!-- e宠就是正品 -->
-
-                <span class="shou"></span>
-                <a href="#"> <span>E宠就是正品</span></a>
-
-
-            </div>
-
-            <!-- 顶条右边 -->
-            <div class="headerTop1-r">
-                <div class="login"> 
-                    <a href="registry.html">[注册]</a>
-                    <a href="login.html">[登录]</a>
-                </div>
-                <div class="admin" style="display: none;">
-                    <span></span>：欢迎光临
-                    <a href="javascript:;">退出</a>
-                </div>
-                <!-- 购物车 -->
-                <span>
-                    <i class="icon iconfont icon-changyongtubiao-mianxing-"></i>
-                <span>购物车</span>
-                </span>
-                <!-- 我的E宠 -->
-                <span class="my">
-                    <i class="icon iconfont icon-mine-gray"></i>
-                <span class="myec">我的E宠</span>
-                <ul class="muecul" style="display: none;">
-                    <li><a href="javaScript:;"> 我的订单</a></li>
-                    <li><a href="javaScript:;"> 退换货记录</a></li>
-                    <li><a href="javaScript:;"> 我的优惠券</a></li>
-                    <li><a href="javaScript:;"> 我的余额</a></li>
-                    <li><a href="javaScript:;"> VIP俱乐部</a></li>
-                </ul>
-                </span>
-
-                <!-- 收藏 -->
-                <span>
-                    <i class="icon iconfont icon-shoucang"></i>
-                <span>收藏</span>
-                </span>
-                <!-- 手机版 -->
-                    <span><img src="./src/img/phone.png" alt=""></span>
-                <span>手机版</span>
-                </span>
-                <span class="wenti">问题反馈 </span>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- -----------------头部中部------------------ -->
-    <div class="headerMidlle">
-        <!-- logo部分 -->
-        <span><img src="./src/img/logo.png" alt=""></span>
-
-        <!-- 搜索框 -->
-        <div class="search">
-            <div class="search1">
-                <input type="text" placeholder="雷米高一粒清" class="search1-l">
-                <button>搜索</button>
-            </div>
-            <div class="search2">
-                <span>热门搜索：</span>
-                <span>小青鲨</span>
-                <span>|</span>
-                <span>洗手凝胶5折</span>
-                <span>|</span>
-                <span>超值套餐</span>
-                <span>|</span>
-                <span>湿巾五件五折</span>
-                <span>|</span>
-                <span>冠能</span>
-
-            </div>
-        </div>
-
-        <!-- 购物车 -->
-        <div class="car">
-            <div class="car1">
-                <div>
-                    <span class="glyphicon glyphicon-shopping-cart"></span>
-                </div>
-                <span class="gou">购物车( )</span>
-            </div>
-        </div>
-    </div>
-    <script src="./src/js/location.js"></script>
-
-    <!-- ----------------头部下方----------------- -->
-    <div class="header-d">
-        <div class="header-Dl">
-            <span class="qieactive">狗狗</span>
-            <span >商品分类</span>
-
-        </div>
-        <ul class="header-Df">
-            <li>
-                <a href="./list.html">
-                    <img src="./src/img/e宠国际.png" alt=""></li>
-            </a>
-            <li>
-                <a href="./list.html">
-                    <b></b> 品牌特卖
-                </a>
-            </li>
-            <li>
-                <a href="./list.html">
-                    <b></b> 潮品视频
-                </a>
-            </li>
-            <li>
-                <a href="./list.html">
-                    <b></b> 小剧场
-                </a>
-            </li>
-            <li>
-                <a href="./list.html">
-                    <b></b> E宠课堂
-                </a>
-            </li>
-            <li>
-                <a href="./list.html">
-                    <b></b> 萌爪联盟
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <b></b> 清仓特价
-                </a>
-            </li>
-        </ul>
-    </div>
-
+    <header></header>
 
     <!-- -----------------轮播部分-------------------------- -->
     <div class="lunbo">
@@ -215,7 +54,7 @@
                         <span class="glyphicon glyphicon-triangle-right"></span>
                     </li>
                     <li>
-                        <span><img src="./src/img/huo.png" alt=""></span>
+                        <span><img src="img/huo.png" alt=""></span>
                         <span>正在进行品牌热卖</span>
                     </li>
                 </ul>
@@ -372,7 +211,7 @@
         <!-- 主粮区左边 -->
         <div class="zhuliang1">
             <div class="zhuliang1-t">
-                <img src="./src/img/zhuliang.png" alt="">
+                <img src="img/zhuliang.png" alt="">
                 <span>狗狗主粮</span>
             </div>
             <div class="zhuliang1-m">
@@ -698,7 +537,7 @@
         <!-- 零食区左边 -->
         <div class="zhuliang1">
             <div class="zhuliang1-t">
-                <img src="./src/img/lingshi.png" alt="">
+                <img src="img/lingshi.png" alt="">
                 <span>狗狗零食</span>
             </div>
             <div class="zhuliang1-m">
@@ -1026,7 +865,7 @@
         <!-- 保健&医疗左边 -->
         <div class="zhuliang1">
             <div class="zhuliang1-t">
-                <img src="./src/img/baojian.png" alt="">
+                <img src="img/baojian.png" alt="">
                 <span>狗狗保健&医疗</span>
             </div>
             <div class="zhuliang1-m">
@@ -1370,7 +1209,7 @@
         <!-- 狗狗日用左边 -->
         <div class="zhuliang1">
             <div class="zhuliang1-t">
-                <img src="./src/img/riyong.png" alt="">
+                <img src="img/riyong.png" alt="">
                 <span>狗狗日用</span>
             </div>
             <div class="zhuliang1-m">
@@ -1698,7 +1537,7 @@
         <!-- 牵引&服饰左边 -->
         <div class="zhuliang1">
             <div class="zhuliang1-t">
-                <img src="./src/img/wanju.png" alt="">
+                <img src="img/wanju.png" alt="">
                 <span>狗狗牵引&服饰&玩具区</span>
             </div>
             <div class="zhuliang1-m">
@@ -2019,227 +1858,11 @@
         </div>
 
     </div>
-
-
-    <!-- ----------------尾部-------------------- -->
-    <footer>
-        <div class="footer1">
-            <!-- 尾部上方 -->
-            <ul class="footer1-t">
-                <li>
-                    <a href="#">
-                        <img src="./src/img/baozheng.png" alt=""> 正品保障
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./src/img/pinzhi.png" alt=""> 品类丰富
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./src/img/fuwu.png" alt=""> 优质服务
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./src/img/kexue.png" alt="">科学养宠
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./src/img/gongyi.png" alt="">E宠公益
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./src/img/shinian.png" alt="">十年同心
-                    </a>
-                </li>
-
-            </ul>
-
-            <!-- 尾部中部 -->
-            <div class="footer1-m">
-                <div>
-
-                    <img src="https://static.epetbar.com/www/newFooter/dog_phone.gif" alt="">
-                    <div>
-                        <h2>售后电话：</h2>
-                        <p>4008889200 <span>「免长途费」</span> </p>
-                        <p>023-68851700 </p>
-                        <p>服务时间：09:00--18:30（周一到周日）</p>
-                    </div>
-                </div>
-
-                <div>
-                    <h2>购物指南</h2>
-                    <p><a href="#">新人优惠</a></p>
-                    <p><a href="#">购物问题</a></p>
-                    <p><a href="#">支付问题</a></p>
-                </div>
-
-                <div>
-                    <h2>配送方式</h2>
-                    <p><a href="#">外包快递</a></p>
-                </div>
-
-                <div>
-                    <h2>售后服务</h2>
-                    <p><a href="#">退换货政策</a></p>
-                    <p><a href="#">退款说明</a></p>
-                    <p><a href="#">售后问题</a></p>
-                </div>
-
-                <div>
-                    <p>扫描下载APP</p>
-                    <p>下单更优惠</p>
-                    <a href="#"><img src="https://static.epetbar.com/www/images/dw2.png?v=10" alt=""></a>
-                </div>
-
-                <div>
-                    <p>扫描关注E宠</p>
-                    <p>商城微信</p>
-                    <a href="#"><img src="https://static.epetbar.com/www/images/app-code.jpg?v=10" alt=""></a>
-                </div>
-            </div>
-
-            <!-- 尾部下方 -->
-            <div class="footer1-b">
-                <div>
-                    <span>
-                        <a href="#">
-                            关于我们
-                        </a>
-                    </span>
-                    <span> <a href="#">
-                            <img src="https://static.epetbar.com/static_web/pc/src/images/background/weibo_logo.png"
-                                alt="">
-                            E宠商城
-                        </a>
-                    </span>
-                    <span> <a href="#">
-                            <img src="https://static.epetbar.com/static_web/pc/src/images/background/weixin_logo.png"
-                                alt="">
-                            E宠商城
-                        </a>
-                    </span>
-                    <span> <a href="#">
-                            <img src="https://static.epetbar.com/static_web/pc/src/images/background/baidu_log.png"
-                                alt="">
-                            E宠商城百家号
-                        </a>
-                    </span>
-                    <span> <a href="#">
-                            <img src="https://static.epetbar.com/static_web/pc/src/images/background/toutiao_logo.png"
-                                alt="">
-                            E宠说
-                        </a>
-                    </span>
-                    <span>
-                        <a href="#">
-                            E宠公益
-                        </a>
-                    </span>
-                    <span>
-                        <a href="#">
-                            联系我们
-                        </a>
-                    </span>
-                    <span>
-                        <a href="#">
-                            公司地址
-                        </a>
-                    </span>
-                    <span>
-                        <a href="#">
-                            紧急响应
-                        </a>
-                    </span>
-                    <span>
-                        <a href="#">
-                            仓储中心
-                        </a>
-                    </span>
-                    <span>
-                        <a href="#">
-                            用户协议
-                        </a>
-                    </span>
-                </div>
-                <div>
-                    <a href="#">
-                        <img src="https://static.epetbar.com/www/newFooter/12315.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="https://static.epetbar.com/www/newFooter/360.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="https://static.epetbar.com/www/newFooter/chengxin.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="https://static.epetbar.com/www/newFooter/shiming.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="https://static.epetbar.com/www/newFooter/tx.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="https://static.epetbar.com/www/newFooter/jybz.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="https://static.epetbar.com/www/newFooter/cqgs.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="https://static.epetbar.com/www/newFooter/baiq.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="https://static.epetbar.com/www/newFooter/wsls.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="https://static.epetbar.com/www/newFooter/sfqy.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="https://static.epetbar.com/www/newFooter/yxqy.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="https://static.epetbar.com/www/newFooter/bhdw.png" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="https://static.epetbar.com/www/newFooter/sjws.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <span>
-                        <a href="">渝ICP备10002905号-1</a>
-                    </span>
-
-                    <span>
-                        <a href="">渝ICP备10002905号-3</a>
-                    </span>
-
-                    <span>
-                        <a href="">营业执照</a>
-                    </span>
-
-                    <span>
-                        <a href="">兽药经营许可证</a>
-                    </span>
-                    <span>
-                        增值电信业务经营许可证：渝B2-20140042 Copyright © 2007-2020 epet.com 　重庆易宠科技有限公司
-                    </span>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-
-
-
-
-    <script src="./src/js/index.js"></script>
-    <script src="./src/js/index1.js"></script>
-    <script src="./src/js/lunbo.js"></script>
+    <footer></footer>
+ 
+    <script src="script/index.js"></script>
+    <script src="script/index1.js"></script>
+    <script src="script/lunbo.js"></script>
     <!-- 二级菜单 -->
     <script>
 

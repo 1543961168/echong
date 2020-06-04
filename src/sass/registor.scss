@@ -25,7 +25,7 @@ main {
     width: 550px; 
     height:400px;
     background: #fff;
-    margin: 30px auto;
+    margin: 100px auto 40px;  
     overflow: hidden;
     border-radius: 40px;
     box-shadow: 0px 5px 5px 5px #e7e7e7;
@@ -67,12 +67,14 @@ main {
                 border-radius: 10px;
             }
             input[type="text"]{
+                margin-top: 10px;
                 text-indent: 12px;
                 font-size: 16px;
                 color: #252525;
                 line-height: 46px;
             }
             input[type="submit"]{
+                margin-top: 30px;
                 background: #459D36;
                 text-indent: 12px;
                 color: #fff;

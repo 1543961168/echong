@@ -1,0 +1,200 @@
+
+  //尾部
+  footer {
+    width: 100%;
+    margin-top: 32px;
+    background-color: #f5f5f5;
+    .footer1 {
+        margin: 0 auto;
+        width: 1214px;
+        height: 460px;
+        //尾部上方
+        .footer1-t {
+            width: 1214px;
+            height: 102px;
+            border-bottom: 1px solid #e7e7e7;
+            li {
+                float: left;
+                width: 202px;
+                height: 102px;
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                font-weight: 900;
+                position: relative;
+                overflow: hidden;
+                img {
+                    width: 62px;
+                    height: 62px;
+                }
+                a {
+                    position: relative;
+                    width: 202px;
+                    height: 90px;
+                    display: block;
+                    color: rgb(48, 48, 48);
+                    text-decoration: none;
+                    transition: .6s;
+                    top: 12px;
+                }
+            }
+            li:hover a {
+                color: #9c3131;
+                top: 6px;
+            }
+        }
+        //尾部中部
+        .footer1-m {
+            width: 1214px;
+            height: 188px;
+            border-bottom: 1px solid #e7e7e7;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            div {
+                height: 133px;
+                color: #666;
+            }
+            p {
+                margin: 0;
+            }
+            div:not(:nth-child(1)) {
+                h2 {
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+                p {
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-top: 5px;
+                }
+                a {
+                    color: #666;
+                }
+                p:nth-child(1) {
+                    margin-top: 20px;
+                }
+                p:hover a {
+                    color: #a73222;
+                }
+            }
+            div:nth-child(1) {
+                div {
+                    float: left;
+                    margin-left: 30px;
+                }
+                img {
+                    float: left;
+                }
+                h2 {
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+                p {
+                    font-size: 18px;
+                    font-weight: 700;
+                    span {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+                p:nth-child(4) {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+            div:nth-child(5) {
+                // display: flex;
+                // justify-content: center;
+                p {
+                    font-size: 12px;
+                    text-align: center;
+                    margin-top: 0;
+                    color: #000;
+                }
+                p:nth-child(1) {
+                    margin-top: 0;
+                }
+                img {
+                    margin-top: 5px;
+                }
+            }
+            div:nth-child(5) {
+                p {
+                    font-size: 12px;
+                    text-align: center;
+                    margin-top: 0;
+                    color: #000;
+                }
+                p:nth-child(1) {
+                    margin-top: 0;
+                }
+                img {
+                    margin-top: 5px;
+                }
+            }
+            div:nth-child(6) {
+                p {
+                    font-size: 12px;
+                    text-align: center;
+                    margin-top: 0;
+                    color: #000;
+                }
+                p:nth-child(1) {
+                    margin-top: 0;
+                }
+                img {
+                    margin-top: 5px;
+                }
+            }
+        }
+        //尾部下方
+        .footer1-b {
+            width: 1214px;
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 20px;
+            }
+            div:nth-child(1) {
+                width: 1214px;
+                span {
+                    margin-left: 10px;
+                    font-size: 12px;
+                    a {
+                        color: #999;
+                    }
+                    img {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+                span:hover a {
+                    color: rgb(231, 53, 53);
+                }
+            }
+            div:nth-child(2) {
+                a {
+                    margin-right: 3px;
+                }
+                img {
+                    width: 82px;
+                    height: 28px;
+                }
+            }
+            div:nth-child(3) {
+                font-size: 12px;
+                span {
+                    margin-left: 10px;
+                }
+                a {
+                    color: #000;
+                }
+                span:not(:nth-child(5)):hover a {
+                    color: #ee2a2af3;
+                }
+            }
+        }
+    }
+}

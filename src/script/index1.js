@@ -1,21 +1,6 @@
 !function(){
-    console.log(1)
-    //头部下拉
-    function heardxia (){
-        const myec =document.querySelector('.myec')
-        const muecul = document.querySelector('.muecul')
-        myec.onmouseover = function (){
-            muecul.style.display = "block"
-            muecul.onmouseover = function(){
-                muecul.style.display =" block"
-            }
-            muecul.onmouseout = function (){
-                muecul.style.display =" none"
-            }
-        }
-    }
+    // console.log(1)
 
-    heardxia()
     //头部tab切换
         function qie(){
             const qiespan = document.querySelectorAll('.header-Dl span')
