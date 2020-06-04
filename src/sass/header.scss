@@ -1,239 +1,241 @@
+@import "_common.scss";
 .icon {
-  width: 1em; height: 1em;
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
 }
+
 // 头部上方
 .headerTop {
-  height: 28px;
-  border-bottom: 1px solid #ddd;
-  background: #f5f5f5;
-  position: relative;
-  z-index: 1002;
+    height: 28px;
+    border-bottom: 1px solid #ddd;
+    background: #f5f5f5;
+    position: relative;
+    z-index: 1002;
 }
 
 .headerTop .headerTop1 {
-  color: #717171;
-  width: 1214px;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
-  // 顶条左边
-  .headerTop1-l { 
-      font-size: 12px;
-      width: 255px;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      .icon-jia {
-          color: #68af5c !important;
-          margin-left: 3px;
-      }
-      .elogo {
-        a{
-          &:hover{
-              color: #68af5c;
-          }
+    color: #717171;
+    width: 1214px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // 顶条左边
+    .headerTop1-l {
+        font-size: 12px;
+        width: 255px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .icon-jia {
+            color: #68af5c !important;
+            margin-left: 3px;
         }
-      }
-      .shou {
-          width: 13px;
-          height: 13px;
-          background-image: url(../img/lvshou.png);
-          margin-left: 5px;
-      }
-  }
-  // 顶条右部
-  .headerTop1-r {
-      font-size: 12px;
-      width: 450px;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      span {
-          cursor: pointer;
-      }
-      span:hover {
-          color: rgb(86, 122, 241);
-      }
-      .my {
-          position: relative;
-          ul {
-              position: absolute;
-              top: 26px;
-              display: none;
-              color: #717171;
-          }
-      }
-      // .my:hover ul {
-      //     display: block;
-      // }
-      .wenti {
-          color: red;
-      }
-  }
+        .elogo {
+            a {
+                &:hover {
+                    color: #68af5c;
+                }
+            }
+        }
+        .shou {
+            width: 13px;
+            height: 13px;
+            background-image: url(../img/lvshou.png);
+            margin-left: 5px;
+        }
+    }
+    // 顶条右部
+    .headerTop1-r {
+        font-size: 12px;
+        width: 450px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span {
+            cursor: pointer;
+        }
+        span:hover {
+            color: rgb(86, 122, 241);
+        }
+        .my {
+            position: relative;
+            ul {
+                position: absolute;
+                top: 26px;
+                display: none;
+                color: #717171;
+            }
+        }
+        // .my:hover ul {
+        //     display: block;
+        // }
+        .wenti {
+            color: red;
+        }
+    }
 }
 
 // 头部中部
 .headerMidlle {
-  width: 1214px;
-  height: 122px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  //搜索框
-  .search {
-      width: 488px;
-      height: 64px;
-      .search1 {
-          width: 488px;
-          height: 36px;
-          .search1-l {
-              width: 413px;
-              height: 36px;
-              border: 2px solid #459D36;
-              float: left;
-          }
-          button {
-              width: 72px;
-              height: 36px;
-              border: none;
-              background-color: #459D36;
-              float: left;
-              color: rgb(255, 255, 255);
-              font-weight: 900;
-          }
-      }
-      .search2 {
-          margin-top: 5px;
-          font-size: 14px;
-          color: #717171;
-          span {
-              cursor: pointer;
-          }
-          span:nth-child(2) {
-              color: red;
-          }
-          span:not(:first-child) {
-              margin-left: 2px;
-              margin-right: 2px;
-          }
-          span:not(:first-child):hover {
-              color: #000;
-          }
-      }
-  }
-  //购物车
-  .car {
-      width: 130px;
-      height: 64px;
-      .car1 {
-          width: 130px;
-          height: 41px;
-          display: flex;
-          align-items: center;
-          overflow: hidden;
-          background: #F5F5F5;
-          border-radius: 15px;
-          box-shadow: 0 0 2px 2px rgb(230, 230, 230);
-          cursor: pointer;
-          div {
-              width: 41px;
-              height: 41px;
-              float: left;
-              border-radius: 15px;
-              background: #459d36;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              .icon-changyongtubiao-mianxing-{
-                font-size: 24px;
-                color: #fff;
-              }
-              span {
-                  color: #fff;
-                  font-size: 20px;
-              }
-          }
-          .gou {
-              margin-left: 15px;
-          }
-      }
-  }
+    width: 1214px;
+    height: 122px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //搜索框
+    .search {
+        width: 488px;
+        height: 64px;
+        .search1 {
+            width: 488px;
+            height: 36px;
+            .search1-l {
+                width: 413px;
+                height: 36px;
+                border: 2px solid #459D36;
+                float: left;
+            }
+            button {
+                width: 72px;
+                height: 36px;
+                border: none;
+                background-color: #459D36;
+                float: left;
+                color: rgb(255, 255, 255);
+                font-weight: 900;
+            }
+        }
+        .search2 {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #717171;
+            span {
+                cursor: pointer;
+            }
+            span:nth-child(2) {
+                color: red;
+            }
+            span:not(:first-child) {
+                margin-left: 2px;
+                margin-right: 2px;
+            }
+            span:not(:first-child):hover {
+                color: #000;
+            }
+        }
+    }
+    //购物车
+    .car {
+        width: 130px;
+        height: 64px;
+        .car1 {
+            width: 130px;
+            height: 41px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: #F5F5F5;
+            border-radius: 15px;
+            box-shadow: 0 0 2px 2px rgb(230, 230, 230);
+            cursor: pointer;
+            div {
+                width: 41px;
+                height: 41px;
+                float: left;
+                border-radius: 15px;
+                background: #459d36;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .icon-changyongtubiao-mianxing- {
+                    font-size: 24px;
+                    color: #fff;
+                }
+                span {
+                    color: #fff;
+                    font-size: 20px;
+                }
+            }
+            .gou {
+                margin-left: 15px;
+            }
+        }
+    }
 }
 
 // 头部下方
 .header-d {
-  width: 1214px;
-  height: 36px;
-  margin: 0 auto;
+    width: 1214px;
+    height: 36px;
+    margin: 0 auto;
 }
 
 .header-Dl {
-  float: left;
-  width: 232px;
-  height: 36px;
-  span {
-      float: left;
-      width: 230px;
-      height: 36px;
-      font-size: 20px;
-      // font-weight: 900;
-      border: 1px solid #ccc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      p {
-          margin: 0;
-      }
-  }
-  .qieactive{
-      background: #E95A49;
-      color: #fff;
-  }
-
+    float: left;
+    width: 232px;
+    height: 36px;
+    span {
+        float: left;
+        width: 230px;
+        height: 36px;
+        font-size: 20px;
+        // font-weight: 900;
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        p {
+            margin: 0;
+        }
+    }
+    .qieactive {
+        background: #E95A49;
+        color: #fff;
+    }
 }
 
 .header-Df {
-  float: left;
-  width: 950px;
-  overflow: hidden;
-  li {
-      float: left;
-      width: 120px;
-      height: 36px;
-      padding: 0 5px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      font-weight: 900;
-      b {
-          display: inline-block;
-          width: 13px;
-          height: 17px;
-          background: url(../img/gutou.png);
-          vertical-align: middle;
-          margin-top: -2px;
-          margin-right: 6px;
-      }
-      a {
-          color: #000;
-          text-decoration: none
-      }
-      a:hover {
-          color: #459D36;
-      }
-      a:hover b {
-          transform: rotate(360deg);
-          transition: .2s;
-      }
-  }
+    float: left;
+    width: 950px;
+    overflow: hidden;
+    li {
+        float: left;
+        width: 120px;
+        height: 36px;
+        padding: 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-weight: 900;
+        b {
+            display: inline-block;
+            width: 13px;
+            height: 17px;
+            background: url(../img/gutou.png);
+            vertical-align: middle;
+            margin-top: -2px;
+            margin-right: 6px;
+        }
+        a {
+            color: #000;
+            text-decoration: none
+        }
+        a:hover {
+            color: #459D36;
+        }
+        a:hover b {
+            transform: rotate(360deg);
+            transition: .2s;
+        }
+    }
 }
