@@ -146,7 +146,7 @@ i {
             padding: 0 30px;
             color: rgb(97, 97, 97);
             border-right: 1px solid #e8e8e8;
-            width: 118px;
+            width: 180px;
             text-align: center;
             cursor: pointer;
         }
@@ -476,7 +476,7 @@ i {
 }
 
 .b-price {
-    width: 120px;
+    width: 158px;
     padding: 15px 40px 10px 0;
     overflow: hidden;
     text-align: right;
@@ -524,13 +524,13 @@ i {
 }
 
 .quantity-form a {
-    display: inline-block;
+    display: block;
     height: 18px;
     line-height: 18px;
     padding: 1px 0;
     width: 16px;
     text-align: center;
-    color: #666;
+    color: #666 !important;
     margin: 0;
     background: #fff;
     float: left
@@ -559,7 +559,7 @@ i {
 }
 
 .b-sum {
-    width: 100px;
+    width: 114px;
     height: 20px;
     padding: 15px 40px 15px 0;
     text-align: right;

@@ -180,8 +180,7 @@
         }
         alert('加入购物城成功(⁎˃ᴗ˂⁎)');
     });
-
-
+    //页面倒计时
     $.fn.extend({
         countDown: function(options) {
             var defaults = {

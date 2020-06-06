@@ -1,13 +1,22 @@
 ! function($) {
     //1.获取cookie渲染对应的商品列表 
     //2.获取所有的接口数据，判断取值。
-    console.log(1)
+    // console.log(1)
 
+    //导入头部组建
+    $(document).ready(function() {
+        $("header").load("header.html")
+    });
+    //导入尾部组建
+    $(document).ready(function() {
+        $("footer").load("footer.html")
+            // console.log(1) 
+    });
     // 头部滑块
     function tophk() {
         const $hkli = $('.hk>ul>li')
         $(".hk>ul>li").hover(function() {
-            var x = $(this).offset().left - $(this).outerWidth() - 13.57;
+            var x = $(this).offset().left - $(this).outerWidth() - 3.57;
             $(this).addClass('hkactive').siblings('li').removeClass('hkactive')
             console.log(x);
             $(".hkspan").css("marginLeft", x)
@@ -138,7 +147,6 @@
             arrnum = [];
         }
     }
-
     //cookie的变化
     function setcookie(obj) {
         cookietoarray();
@@ -147,7 +155,6 @@
         $.cookie('cookienum', arrnum, 10);
     }
 
-    setcookie()
 
 
 
@@ -165,7 +172,8 @@
         $.cookie('cookiesid', arrsid, { expires: 10, path: '/' });
         $.cookie('cookienum', arrnum, { expires: 10, path: '/' });
     }
-    $('.b-action a').on('click', function() {
+
+    $('.b-action>a').on('click', function() {
         cookietoarray();
         if (window.confirm('你确定要删除吗?')) {
             $(this).parents('.goods-item').remove();
@@ -186,4 +194,5 @@
             calcprice(); //计算总价
         }
     });
+
 }(jQuery);

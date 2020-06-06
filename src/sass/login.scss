@@ -73,7 +73,7 @@ body {
     }
     input[type="text"],
     input[type="password"],
-    input[type="button"]{
+    input[type="button"] {
         height: 46px;
         width: 358px;
         border: 1px solid $gray;
@@ -92,7 +92,6 @@ body {
         color: #fff;
         background: $green;
         cursor: pointer;
-
     }
     .btn {
         display: block;
@@ -103,9 +102,6 @@ body {
         line-height: 46px;
         margin-top: 0;
     }
-
-
-
     lable {
         float: right;
         color: #666;
