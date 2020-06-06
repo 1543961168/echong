@@ -35,7 +35,7 @@
         $bpic.attr('src', d.url);
         $title.html(d.title);
         $price.html(d.price);
-        console.log(d.piclisturl.split(','));
+        // console.log(d.piclisturl.split(','));
         //渲染小图
         let picarr = d.piclisturl.split(',');
         let $strhtml = '';

@@ -145,6 +145,7 @@
             background: #F5F5F5;
             border-radius: 15px;
             box-shadow: 0 0 2px 2px rgb(230, 230, 230);
+            position: relative;
             cursor: pointer;
             div {
                 width: 41px;
@@ -165,7 +166,9 @@
                 }
             }
             .gou {
-                margin-left: 15px;
+                position: absolute;
+                left: 60px;
+                top: 15px;
             }
         }
     }

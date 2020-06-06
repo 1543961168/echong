@@ -2,10 +2,10 @@
 <link rel="stylesheet" href="css/header.css">
 <!-- <script src="script/jquery-1.9.1.min.js"></script> -->
 <link rel="stylesheet" href="css/location.css">
-<script src="script/header.js"></script>
 <link rel="stylesheet" href="http://at.alicdn.com/t/font_1856282_1hv7ct8ru4l.js">
 <link rel="stylesheet" href="http://at.alicdn.com/t/font_1856282_1hv7ct8ru4l.css">
-
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.11.1/jquery.js"></script>
+<script src="thirdplugins/jquery.cookie.js"></script>
 
 
 
@@ -17,7 +17,7 @@
             <!-- e宠首页 -->
             <span class="elogo">
                 <i class="icon iconfont icon-jia"></i>
-              <a href="#">E宠首页</a>
+              <a href="index.html">E宠首页</a>
               </span>
             <span style="margin-left: 10px;">送至：</span>
             <!-- ------地址联动-- -->
@@ -87,7 +87,7 @@
 <!-- -----------------头部中部------------------ -->
 <div class="headerMidlle">
     <!-- logo部分 -->
-    <span><img src="img/logo.png" alt=""></span>
+    <span><a href="index.html"><img src="img/logo.png" alt=""></a></span>
 
     <!-- 搜索框 -->
     <div class="search">
@@ -113,10 +113,12 @@
     <!-- 购物车 -->
     <div class="car">
         <div class="car1">
-            <div>
-                <i class="icon iconfont icon-changyongtubiao-mianxing-"></i>
-            </div>
-            <span class="gou">购物车( )</span>
+            <a href="cart.html" style="color: rgb(112, 112, 112);">
+                <div>
+                    <i class="icon iconfont icon-changyongtubiao-mianxing-"></i>
+                </div>
+                <span class="gou">购物车( <em class="cooknum">0</em> )</span>
+            </a>
         </div>
     </div>
 </div>
@@ -165,3 +167,4 @@
         </li>
     </ul>
 </div>
+<script src="script/header.js"></script>
