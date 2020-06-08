@@ -178,7 +178,27 @@
             arrnum.push($('#count').val()); //将数量push到arrnum数组中
             $.cookie('cookienum', arrnum, { expires: 10, path: '/' });
         }
-        alert('加入购物城成功(⁎˃ᴗ˂⁎)');
+        // 飞入购物车效果
+        var offset = $(".car1").offset();
+        var img = $smallpic.attr('src');
+        var flyer = $('<img class="u-flyer" src="' + img + '">');
+        flyer.fly({
+            start: {
+                left: $smallpic.offset().top, //开始位置（必填）#fly元素会被设置成position: fixed 
+                top: $smallpic.offset().left //开始位置（必填） 
+            },
+            end: {
+                left: offset.left + 10, //结束位置（必填） 
+                top: offset.top + 10, //结束位置（必填） 
+                width: 0, //结束时宽度 
+                height: 0 //结束时高度 
+            },
+            onEnd: function() { //结束回调 
+                $("#msg").show().fadeOut(1000); //提示信息 
+                // addcar.css("cursor","default").removeClass('orange').unbind('click'); 
+                // this.destory(); //移除dom 
+            }
+        });
     });
     //页面倒计时
     $.fn.extend({
