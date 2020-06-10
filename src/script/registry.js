@@ -47,9 +47,56 @@
     });
     //密码框获取焦点提示
     $pas.focus(function() {
-            if ($(this).val().length == 0) {
-                $('.mits').show().html("建议使用字母、数字和符号两种以上的组合，6-20个字符");
+        if ($(this).val().length == 0) {
+            $('.mits').show().html("建议使用字母、数字和符号两种以上的组合，6-20个字符");
+        }
+    })
+    $pas.on('input', function() {
+            console.log(1)
+            let $pass = $(this).val();
+            if ($pass.length >= 6 && $pass.length <= 20) {
+                let regnum = /\d+/;
+                let regupper = /[A-Z]+/;
+                let reglower = /[a-z]+/;
+                let regother = /[\W\_]+/; //其他字符
+                //test():匹配存在感
+                let $count = 0; //计数
+
+                if (regnum.test($pass)) {
+                    $count++;
+                }
+
+                if (regupper.test($pass)) {
+                    $count++;
+                }
+
+                if (reglower.test($pass)) {
+                    $count++;
+                }
+
+                if (regother.test($pass)) {
+                    $count++;
+                }
+
+                switch ($count) {
+                    case 1:
+                        $('.mits').show().html("弱").css("color", 'red');
+                        $password = false;
+                        break;
+
+                    case 2:
+
+                    case 3:
+                        $('.mits').show().html("中").css("color", 'orange');
+                        $password = true;
+                        break;
+                    case 4:
+                        $('.mits').show().html("强").css("color", 'green');
+                        $password = true;
+                        break;
+                }
             }
+
         })
         //密码框失去焦点做的判断
     $pas.blur(function() {

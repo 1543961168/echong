@@ -16,7 +16,7 @@
     function tophk() {
         const $hkli = $('.hk>ul>li')
         $(".hk>ul>li").hover(function() {
-            var x = $(this).offset().left - $(this).outerWidth() - 3.57;
+            var x = $(this).offset().left - $(this).outerWidth() - 51;
             $(this).addClass('hkactive').siblings('li').removeClass('hkactive')
             console.log(x);
             $(".hkspan").css("marginLeft", x)
@@ -181,6 +181,7 @@
             calcprice(); //计算总价
         }
     });
+
 
     $('.operation a').on('click', function() {
         cookietoarray();
