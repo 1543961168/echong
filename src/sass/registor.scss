@@ -62,14 +62,14 @@ main {
         p {
             color: $hui;
             margin-top: 10px;
-            input[type="text"],
+            input:nth-of-type(1),
             input[type="submit"] {
                 height: 46px;
                 width: 300px;
                 border: 1px solid #dedfe0;
                 border-radius: 10px;
             }
-            input[type="text"] {
+            input:nth-of-type(1) {
                 margin-top: 10px;
                 text-indent: 12px;
                 font-size: 16px;
@@ -108,6 +108,28 @@ main {
     color: rgb(126, 126, 126);
     // background: rgb(233, 233, 233);
     border-radius: 3px;
+}
+
+.pasp {
+    position: relative;
+}
+
+.yonghu {
+    position: relative;
+}
+
+.mima {
+    position: absolute;
+    left: 280px;
+    top: 25px;
+    cursor: pointer;
+}
+
+.del {
+    position: absolute;
+    left: 280px;
+    top: 25px;
+    cursor: pointer;
 }
 
 footer {

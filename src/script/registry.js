@@ -122,4 +122,19 @@
         }
 
     });
+    //密码框小眼睛特效
+    $('.mima').on('click', function() {
+        if ($(this).attr('class') == 'iconfont icon-yanjing mima') {
+            $(this).attr('class', 'iconfont icon-biyanjing mima')
+            $('.password').attr('type', 'password')
+        } else { 
+            $(this).attr('class', 'iconfont icon-yanjing mima')
+            $('.password').attr('type', 'text')
+        }
+    });
+    //删除用户框信息
+    $('.del').on('click', function() {
+        $('.username').val('')
+        $('.yhmts').show().html('用户名不能为空').css('color', 'red');
+    })
 }(jQuery);

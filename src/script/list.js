@@ -2,12 +2,10 @@
     //导入头部组建
     $(document).ready(function() {
         $("header").load("header.html")
-    });
-    //导入尾部组建
-    $(document).ready(function() {
+            //导入尾部组建
         $("footer").load("footer.html")
             // console.log(1) 
-    })
+    });
     let array_default = [];
     let array = [];
     let prev = null;

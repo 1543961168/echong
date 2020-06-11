@@ -2,9 +2,7 @@
     //导入头部组建
     $(document).ready(function() {
         $("header").load("header.html")
-    });
-    //导入尾部组建
-    $(document).ready(function() {
+            //导入尾部组建
         $("footer").load("footer.html")
             // console.log(1) 
     });
@@ -51,9 +49,8 @@
                     $clonebox.find('.goodstitle').find('a').html(value.title); //改变标题
                     $clonebox.find('.aprice').find('strong').html(value.price); //改变价格
                     $clonebox.find('.numinput').find('input').val(num); //改变库存数量
-                    //计算单个商品的价格
-                    $clonebox.find('.asum').find('strong').html((value.price * num).toFixed(2));
-                    $clonebox.css('display', 'block');
+                    $clonebox.find('.asum').find('strong').html((value.price * num).toFixed(2)); //计算单个商品的价格
+                    $clonebox.css('display', 'block'); //克隆元素显示
                     $itemlist.append($clonebox); //将克隆的元素添加进去
                     calcprice(); //计算总价
                 }
