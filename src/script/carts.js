@@ -31,7 +31,9 @@
     let $numadd = $('.quantity-add'); //添加数量按钮
     let $numdel = $('.quantity-down'); //减少数量按钮
     let $numinput = $('.quantity-form input'); //数字input框
-    //将改变后的数量存放到cookie中
+    let $danshan = $('.b-action>a'); //每一行单删按钮
+    let $allshan = $('.operation a'); //删除状态为checkout的按钮
+    //将商品改变的数量存放到cookie中
     let arrsid = [];
     let arrnum = [];
     //传进去两个参数
@@ -57,8 +59,7 @@
             });
         });
     }
-
-    //cookie渲染数据
+    //遍历cookie渲染数据
     if ($.cookie('cookiesid') && $.cookie('cookienum')) {
         let s = $.cookie('cookiesid').split(',');
         let n = $.cookie('cookienum').split(',');
@@ -66,7 +67,6 @@
             showlist(s[index], n[index]);
         });
     }
-
     //计算总价的函数
     function calcprice() {
         let $sum = 0; //商品的件数
@@ -80,7 +80,6 @@
         $anum.find('em').html($sum);
         $tprice.html($count.toFixed(2));
     }
-
     //全选按钮事件的处理
     $allselect.on('change', function() {
         $('.goods-item:visible').find(':checkbox').prop('checked', $(this).prop('checked'));
@@ -89,7 +88,7 @@
     });
     let $inputs = $('.goods-item:visible').find(':checkbox');
     $itemlist.on('change', $inputs, function() {
-        //$(this):被委托的元素，checkbox
+        //判断选中的个数是否跟input的checked个数一致
         if ($('.goods-item:visible').find(':checkbox').length === $('.goods-item:visible').find('input:checked').size()) {
             $allselect.prop('checked', true);
         } else {
@@ -97,7 +96,6 @@
         }
         calcprice(); //计算总价
     });
-
     //数量的增加
     $numadd.on('click', function() {
         let $num = $(this).parents('.goods-item').find('.quantity-form input').val();
@@ -108,7 +106,6 @@
         calcprice(); //计算总价
         setcookie($(this));
     });
-
     //数量的减少
     $numdel.on('click', function() {
         let $num = $(this).parents('.goods-item').find('.quantity-form input').val();
@@ -121,27 +118,25 @@
         calcprice(); //计算总价
         setcookie($(this));
     });
-
     //input框里面数字的改变
     $numinput.on('input', function() {
-        let $reg = /^\d+$/g; //只能输入数字
+        //用正则只能匹配数字
+        let $reg = /^\d+$/g;
         let $value = $(this).val();
-        if (!$reg.test($value)) { //不是数字
+        //当输入框不是数字的时候将其变成1
+        if (!$reg.test($value)) {
             $(this).val(1);
         }
         $(this).parents('.goods-item').find('.b-sum strong').html(calcsingleprice($(this)));
         calcprice(); //计算总价
         setcookie($(this));
     });
-
     //计算单价
-    function calcsingleprice(obj) { //obj元素对象
+    function calcsingleprice(obj) {
         let $dj = parseFloat(obj.parents('.goods-item').find('.b-price strong').html());
         let $num = parseInt(obj.parents('.goods-item').find('.quantity-form input').val());
         return ($dj * $num).toFixed(2)
     }
-
-
     //存放两个值到cookie中
     function cookietoarray() {
         if ($.cookie('cookiesid') && $.cookie('cookienum')) {
@@ -157,11 +152,12 @@
         cookietoarray();
         let $sid = obj.parents('.goods-item').find('img').attr('sid');
         arrnum[$.inArray($sid, arrsid)] = obj.parents('.goods-item').find('.quantity-form input').val();
-        $.cookie('cookienum', arrnum, 10);
+        $.cookie('cookienum', arrnum, { expires: 10, path: '/' });
     }
-    //删除
-    function delcookie(sid, arrsid) { //sid:当前删除的sid  arrsid:存放sid的数组[3,5,6,7]
-        let $index = -1; //删除的索引位置
+    //删除cookie
+    function delcookie(sid, arrsid) {
+        //用索引来判断
+        let $index = -1;
         $.each(arrsid, function(index, value) {
             if (sid === value) {
                 $index = index;
@@ -172,8 +168,8 @@
         $.cookie('cookiesid', arrsid, { expires: 10, path: '/' });
         $.cookie('cookienum', arrnum, { expires: 10, path: '/' });
     }
-
-    $('.b-action>a').on('click', function() {
+    //每一行的删除
+    $danshan.on('click', function() {
         cookietoarray();
         if (window.confirm('你确定要删除吗?')) {
             $(this).parents('.goods-item').remove();
@@ -181,9 +177,8 @@
             calcprice(); //计算总价
         }
     });
-
-
-    $('.operation a').on('click', function() {
+    //删除选中时候的checkbox
+    $allshan.on('click', function() {
         cookietoarray();
         if (window.confirm('你确定要全部删除吗?')) {
             $('.goods-item:visible').each(function() {
