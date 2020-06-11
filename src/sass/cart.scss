@@ -239,7 +239,7 @@ i {
     padding-left: 11px
 }
 
-.cart-checkbox input {
+.cartcheck input {
     margin-right: 5px
 }
 
@@ -284,7 +284,7 @@ i {
     font-weight: 700
 }
 
-.shop .cart-checkbox {
+.shop .cartcheck {
     float: left
 }
 
@@ -369,12 +369,12 @@ i {
     text-align: right
 }
 
-.goods-item {
+.goodslie {
     padding: 0 10px 0 40px;
     position: relative
 }
 
-.goods-item-sele {
+.goodslie-sele {
     background: #f7f7f7
 }
 
@@ -396,12 +396,12 @@ i {
     padding: 15px 0 10px 0
 }
 
-.goods-item .cart-checkbox input {
+.goodslie .cartcheck input {
     position: absolute;
     z-index: 2
 }
 
-.cart-checkbox .line-circle {
+.cartcheck .line-circle {
     position: absolute;
     left: 2px;
     top: -5px;
@@ -410,13 +410,13 @@ i {
     height: 29px
 }
 
-.goods-item .b-goods {
+.goodslie .b-goods {
     width: 300px;
     padding: 15px 0 10px 0;
     position: relative;
 }
 
-.b-goods .goods-name .goods-pic {
+.b-goods .goods-name .goodurl {
     width: 82px;
     height: 82px;
     margin-right: 10px;
@@ -424,12 +424,12 @@ i {
     float: left
 }
 
-.b-goods .goods-name .goods-pic img {
+.b-goods .goods-name .goodurl img {
     width: 80px;
     height: 80px
 }
 
-.goods-d-info {
+.goodstitle {
     height: 40px;
     font-weight: 900;
     line-height: 20px;
@@ -476,7 +476,7 @@ i {
     width: 160px
 }
 
-.b-price {
+.aprice {
     width: 158px;
     padding: 15px 40px 10px 0;
     overflow: hidden;
@@ -485,7 +485,7 @@ i {
     margin-left: 44px;
 }
 
-.b-price .sales-promotion {
+.aprice .sales-promotion {
     display: block;
     width: 53px;
     border: 1px solid #f9d2d3;
@@ -517,14 +517,14 @@ i {
     margin-top: 30px;
 }
 
-.b-quantity .quantity-form {
+.b-quantity .numinput {
     position: relative;
     overflow: hidden;
     height: 20px;
     border: 1px solid #cacbcb;
 }
 
-.quantity-form a {
+.numinput a {
     display: block;
     height: 18px;
     line-height: 18px;
@@ -537,15 +537,15 @@ i {
     float: left
 }
 
-.quantity-form .quantity-down {
+.numinput .numdel {
     border-right: 1px solid #cacbcb
 }
 
-.quantity-form .quantity-add {
+.numinput .numadd {
     border-left: 1px solid #cacbcb
 }
 
-.quantity-form input {
+.numinput input {
     width: 44px;
     height: 22px;
     float: left;
@@ -559,7 +559,7 @@ i {
     line-height: 20px
 }
 
-.b-sum {
+.asum {
     width: 114px;
     height: 20px;
     padding: 15px 40px 15px 0;
@@ -568,19 +568,19 @@ i {
     margin-left: 30px;
 }
 
-.b-sum strong {
+.asum strong {
     color: #333;
     font-weight: 700;
     font-size: 14px
 }
 
-.b-action {
+.danshan {
     padding: 15px 0 10px 0;
     margin-top: 30px;
     margin-left: 30px;
 }
 
-.b-action a {
+.danshan a {
     display: block;
     width: 75px;
     height: 20px
@@ -601,14 +601,14 @@ i {
     padding: 16px 0 16px 9px
 }
 
-.operation {
+.allshan {
     float: left;
     height: 50px;
     width: 310px;
     line-height: 50px
 }
 
-.operation a {
+.allshan a {
     margin-left: 20px;
     display: inline-block;
     height: 50px
@@ -648,7 +648,7 @@ i {
 }
 
 .price-sum span {
-    display: inline-block;
+    display: block;
     width: 110px;
     height: 20px;
     float: left;
@@ -659,13 +659,13 @@ i {
     text-align: right
 }
 
-.price-sum .totalprice {
+.price-sum .tprice {
     font-size: 18px;
     color: #e4393c;
     font-weight: 700
 }
 
-.amount-sum {
+.anum {
     float: right;
     color: #999;
     height: 44px;
@@ -674,14 +674,14 @@ i {
     cursor: pointer
 }
 
-.amount-sum em {
+.anum em {
     color: #e4393c;
     font-family: verdana;
     font-weight: 700;
     margin: 0 3px
 }
 
-.amount-sum b {
+.anum b {
     display: inline-block;
     width: 9px;
     height: 5px;

@@ -5,15 +5,31 @@
     });
     //导入尾部组建
     $(document).ready(function() {
-            $("footer").load("footer.html")
-                // console.log(1) 
-        })
-        //1.列表页传来的sid
+        $("footer").load("footer.html")
+            // console.log(1) 
+    });
+
+    //1.列表页传来的sid
     let $sid = location.search.substring(1).split('=')[1];
     const $smallpic = $('#smallpic');
     const $bpic = $('#bpic');
     const $title = $('.loadtitle');
     const $price = $('.loadpcp');
+    //放大镜
+    const $spic = $('#spic');
+    const $sf = $('#sf'); //小放
+    const $bf = $('#bf'); //大放
+    const $left = $('#left'); //左箭头
+    const $right = $('#right'); //右箭头
+    //将商品的数据存放到cookie中
+    let arrsid = [];
+    let arrnum = [];
+    let $abtn = $('.abtn');
+    //计算比例问题
+    const $list = $('#list'); //小图列表
+    $sf.width($spic.width() * $bf.width() / $bpic.width());
+    $sf.height($spic.height() * $bf.height() / $bpic.height());
+    let $bili = $bpic.width() / $spic.width();
     if (!$sid) {
         $sid = 1;
     }
@@ -39,20 +55,7 @@
         });
         $('#list ul').html($strhtml);
     });
-
-    //放大镜
-    const $spic = $('#spic');
-    const $sf = $('#sf'); //小放
-    const $bf = $('#bf'); //大放
-    const $left = $('#left'); //左箭头
-    const $right = $('#right'); //右箭头
-    const $list = $('#list'); //小图列表
-
-    $sf.width($spic.width() * $bf.width() / $bpic.width());
-    $sf.height($spic.height() * $bf.height() / $bpic.height());
-    let $bili = $bpic.width() / $spic.width();
-
-
+    //鼠标移入移出
     $spic.hover(function() {
         $sf.css('visibility', 'visible');
         $bf.css('visibility', 'visible');
@@ -110,8 +113,6 @@
             });
         }
     });
-
-
     $left.on('click', function() {
         let $lists = $('#list ul li');
         if ($num > 6) {
@@ -125,11 +126,7 @@
             });
         }
     });
-
-
-    let arrsid = [];
-    let arrnum = [];
-
+    //将商品数据存放到cookie中 与购物车页面数据保持一致
     function cookietoarray() {
         if ($.cookie('cookiesid') && $.cookie('cookienum')) {
             arrsid = $.cookie('cookiesid').split(',');
@@ -140,11 +137,8 @@
         }
     }
 
-
-
-    $('.abtn').on('click', function() {
+    $abtn.on('click', function() {
         let $sid = $(this).parents('.goodsinfo').find('#smallpic').attr('sid');
-
         cookietoarray();
         if ($.inArray($sid, arrsid) != -1) {
             let $num = parseInt(arrnum[$.inArray($sid, arrsid)]) + parseInt($('#count').val()); //取值

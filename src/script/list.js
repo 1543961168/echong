@@ -17,6 +17,7 @@
         url: 'http://10.31.162.28/echong/php/listdata.php',
         dataType: 'json'
     }).done(function(data) {
+        //将数据渲染出来
         let $strhtml = '<ul>';
         $.each(data, function(index, value) {
             $strhtml += `
@@ -45,7 +46,6 @@
             array_default[index] = $(this);
         });
     });
-
     //分页
     $('.page').pagination({
         pageCount: 2,
