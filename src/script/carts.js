@@ -1,8 +1,4 @@
 ! function($) {
-    //1.获取cookie渲染对应的商品列表 
-    //2.获取所有的接口数据，判断取值。
-    // console.log(1)
-
     //导入头部组建
     $(document).ready(function() {
         $("header").load("header.html")
@@ -53,8 +49,8 @@
 
     //2.获取cookie渲染数据
     if ($.cookie('cookiesid') && $.cookie('cookienum')) {
-        let s = $.cookie('cookiesid').split(','); //获取cookie 同时转换成数组[1,2]
-        let n = $.cookie('cookienum').split(','); //获取cookie 同时转换成数组[10,20]
+        let s = $.cookie('cookiesid').split(',');
+        let n = $.cookie('cookienum').split(',');
         $.each(s, function(index, value) {
             showlist(s[index], n[index]);
         });

@@ -1,7 +1,5 @@
 <?php
 include "conn.php";
-
-
 //检测用户名是否重名
 if (isset($_POST['username'])) {
     $user = $_POST['username'];
@@ -12,7 +10,6 @@ if (isset($_POST['username'])) {
         echo false; //空
     }
 }
-
 //接收前端表单提交的数据
 if (isset($_POST['submit'])) {
     $username = $_POST['username'];
